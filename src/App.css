@@ -1,38 +1,196 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ justify-content: center;
+  margin: 0px 0px;
+
+}
+
+#title{
+  border: 2px white solid;
+  border-radius: 10px;
+ 
+  padding: 10Px;
+ 
+ 
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+nav ul {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 75px 0px;
+
+
+}
+nav ul li {
+  list-style-type: none;
+  width: 10%;
+  border: 2px white solid;
+  border-radius: 10px;
+
+  padding: 10Px;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+nav ul li a:visited{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  padding-left: 80px;
+
+}
+footer div i {
+  font-size: 3rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 180px; 
+  width: 50%;
+  margin: 0px 400px;
+}
+.fab{
+  color: white;
+}
+
+#tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 180px; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: auto;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+#aboutTab{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+#skillsTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 120px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+#projectsTab{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
+img{
+  width:20%;
+  height: auto;
+}
+
+.closeButton {
+  border: 2px white solid;
+  border-radius: 0 0 60px 0;
+  width: 60px;
+  background-color: white;
+  color: black;
+}
+.main{
+  padding: 10px;
+}
+
+.mainSkills{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+}
+.TNI{
+  width: 100%;
+}
+
+.skill{
+  width: 20%;
+  border-radius: 10px;
+  border: white 2px solid;
+  margin: 10px;
+}
+
+.projects{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.html, .react, .redux{
+  width: 28%;
+  border-radius: 10px;
+  border: white 2px solid;
+  margin: 10px;
+  text-align: left;
+}
+
+.html, .react, .redux{
+  text-align: center;
+  padding: 5px;
+}
+#projectsTab img {
+  width: 15%;
+  height: auto;
+
+}
+#projectsTab .mainProjects {
+margin: 0 
+}
+#projectsTab a {
+  color: white;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  #projectsTab a:visited {
+    color: white;
+    }
+.projects{
+  padding: 0px;
 }
