@@ -90,6 +90,38 @@ footer div i {
   border: 2px white solid;
 }
 
+#aboutTab{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+#skillsTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 120px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+#projectsTab{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px white solid;
+}
 img{
   width:20%;
   height: auto;
@@ -104,4 +136,61 @@ img{
 }
 .main{
   padding: 10px;
+}
+
+.mainSkills{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+}
+.TNI{
+  width: 100%;
+}
+
+.skill{
+  width: 20%;
+  border-radius: 10px;
+  border: white 2px solid;
+  margin: 10px;
+}
+
+.projects{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.html, .react, .redux{
+  width: 28%;
+  border-radius: 10px;
+  border: white 2px solid;
+  margin: 10px;
+  text-align: left;
+}
+
+.html, .react, .redux{
+  text-align: center;
+  padding: 5px;
+}
+#projectsTab img {
+  width: 15%;
+  height: auto;
+
+}
+#projectsTab .mainProjects {
+margin: 0 
+}
+#projectsTab a {
+  color: white;
+  }
+  #projectsTab a:visited {
+    color: white;
+    }
+.projects{
+  padding: 0px;
 }

@@ -18,7 +18,7 @@
 - [x] Personal mission statement: brief overview of what they do and why 
 
 ## Skills section: 
-- [ ] List of all technical skills, methodologies and platforms related to their curriculum track 
+- [x] List of all technical skills, methodologies and platforms related to their curriculum track 
 
 ## Projects Section, with each project containing: 
 - [ ] Title 

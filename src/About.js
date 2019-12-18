@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export default function About () {
 
     return(
-        <div id="tab">
+        <div id="aboutTab">
             <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
 
             <div className="main">
