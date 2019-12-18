@@ -16,7 +16,7 @@ export default function Projects () {
             </div>
 <div className="projects">
             <div className="html">
-                <h2 className="title"><a href="https://nostalgic-sinoussi-ec1542.netlify.com">VR Connect Marketing Page</a></h2>
+                <h2 className="title"><a href="https://nostalgic-sinoussi-ec1542.netlify.com" target="_blank" rel="noopener noreferrer">VR Connect Marketing Page</a></h2>
                 <p className="projDesc">Did this project during a build week with six other developers doing different parts. This was my part in doing this project.</p>
                 <p className="stackUse">Built using HTML, CSS and LESS.</p>
                 <div>
@@ -30,7 +30,7 @@ export default function Projects () {
             </div>
 
             <div className="react">
-                <h2 className="title"><a href="https://reducer-todo-eight-wine.now.sh/">Reducer Todo</a></h2>
+                <h2 className="title"><a href="https://reducer-todo-eight-wine.now.sh/" target="_blank" rel="noopener noreferrer">Reducer Todo</a></h2>
                 <p className="projDesc">This project was done to learn the reducer function and component out the actions to a seperate case block.</p>
                 <p className="stackUse">Built with React, JSX, and a reducer function</p>
                 <div>
@@ -44,11 +44,11 @@ export default function Projects () {
             </div>
 
             <div className="redux">
-                <h2 className="title"><a href="https://car-sales-ll5zn3ng4.now.sh/">Car Sales</a></h2>
+                <h2 className="title"><a href="https://car-sales-ll5zn3ng4.now.sh/" target="_blank" rel="noopener noreferrer">Car Sales</a></h2>
                 <p className="projDesc">This project was an assignment that came with some of the code but had to wire in the Redux</p>
                 <p className="stackUse">Built using Redux, React, and CSS</p>
                 <div>
-                    <a href="https://github.com/mdlevick/Car-Sales " target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+                    <a href="https://github.com/mdlevick/Car-Sales" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
                     <li>overcame difficulties</li>
