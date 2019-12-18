@@ -11,11 +11,11 @@
 - [ ] No typos, proofread for clarity and flow 
 
 ## About me section 
-- [ ] Professional profile picture 
-- [ ] Full name 
-- [ ] Contact info 
-- [ ] Links to all other artifacts 
-- [ ] Personal mission statement: brief overview of what they do and why 
+- [x] Professional profile picture 
+- [x] Full name 
+- [x] Contact info 
+- [x] Links to all other artifacts 
+- [x] Personal mission statement: brief overview of what they do and why 
 
 ## Skills section: 
 - [ ] List of all technical skills, methodologies and platforms related to their curriculum track 

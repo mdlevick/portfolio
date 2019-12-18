@@ -1,9 +1,10 @@
 .App {
   text-align: center;
   color: white;
-  width: 50%;
-  margin: auto;
-  padding-top: 180px;
+  display: flex;
+ justify-content: center;
+  margin: 0px 0px;
+
 }
 
 #title{
@@ -69,7 +70,38 @@ footer div i {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-top: 180px; 
+  width: 50%;
+  margin: 0px 400px;
 }
 .fab{
   color: white;
+}
+
+#tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 180px; 
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: auto;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+img{
+  width:20%;
+  height: auto;
+}
+
+.closeButton {
+  border: 2px white solid;
+  border-radius: 0 0 60px 0;
+  width: 60px;
+  background-color: white;
+  color: black;
+}
+.main{
+  padding: 10px;
 }
