@@ -3,7 +3,7 @@
 ## Format / structure 
 - [x] React router
 - [x] Custom domain name ( Michaellevick.now.sh )
-- [x] Original site; no templates (i.e. Wix, Squarespace, etc.) 
+- [x] Original site; no templates 
 - [x] All links functional 
 - [ ] Responsive layout 
 - [x] Unique, aesthetically pleasing design 
