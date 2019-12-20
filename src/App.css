@@ -115,11 +115,11 @@ footer div i {
   flex-direction: column;
   width: 93%;
   height: auto;
-  margin: 5% 4%;
+  margin: 8.24% 4%;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   border: 2px white solid;
-  padding: 10px 0;
+  padding: 0  0 10px 0;
 }
 img{
   width: 150px;
