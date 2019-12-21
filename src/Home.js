@@ -31,12 +31,15 @@ export default function Home () {
         <div>
         <a href="https://www.facebook.com/aethergrove.anun" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
         </div>
+        <hr></hr>
         <div>
         <a href="https://www.linkedin.com/in/michael-david-levick-jr-81b4a0115/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         </div>
+        <hr></hr>
         <div>
         <a href="https://github.com/mdlevick" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
         </div>
+        <hr></hr>
         <div>
         <a href="https://twitter.com/LevickMichael" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
         </div>
