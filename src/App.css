@@ -56,11 +56,18 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   text-align: center;
-  padding-left: 80px;
+  
 
 }
+
+footer div{
+  width: 75px;
+  padding: 10Px;
+  
+}
+
 footer div i {
   font-size: 3rem;
 
@@ -72,7 +79,7 @@ footer div i {
   justify-content: space-around;
   padding: 15vh 0;
   width: 90%;
-  height: 70vh;
+  height: auto;
   margin: 0px 5%;
 }
 .fab{
@@ -83,7 +90,7 @@ footer div i {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 90vh;
+  height: auto;
   margin: 5vh 5%;
 
   background-color: rgba(0, 0, 0, 0.75);
@@ -101,12 +108,12 @@ footer div i {
 
    
   width: 90%;
-  height: 89.5vh;
+  height: auto;
   margin: 5vh 5%;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   border: 2px white solid;
-  
+  padding-bottom: 16%
 }
 
 #projectsTab{ 
@@ -178,6 +185,7 @@ img{
 .html, .react, .redux{
   text-align: center;
   padding: 5px;
+  width: 250px;
 }
 .html i, .react i, .redux i{
   font-size: 2rem;
