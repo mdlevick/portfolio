@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 
 export default function Skills () {
-
+const skills = ["HTML", "CSS/LESS", "Responsive Web Design", "React", "Redux", "Git Flow", "JavaScript", "Node.js", "Express", "Sessions", "JWT", "Stylizing Dependencies"  ]
     return(
         <div id="skillsTab">
         <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
@@ -16,15 +16,9 @@ export default function Skills () {
             <p>I learned these skills from self study and through Lambda Schools Web Development path</p>
             </div>
 
-            <div className="skill"><p>HTML</p></div>
-            <div className="skill"><p>CSS/LESS</p></div>
-            <div className="skill"><p>Responsive Web Design</p></div>
-            <div className="skill"><p>React</p></div>
-            <div className="skill"><p>Redux</p></div>
-            <div className="skill"><p>Git Flow</p></div>
-            <div className="skill"><p>JavaScript</p></div>
-            <div className="skill"><p>Node.js</p></div>
-            
+        {skills.map(skill => 
+            <div className="skill">{skill}</div>
+            )}
 
 
         </div>
