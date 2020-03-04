@@ -6,10 +6,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+
     <Router>
-    <div id="Wrapper">
-<App />
-</div>
+      <div id="Wrapper">
+      <App />
+      </div>
   </Router>,
    document.getElementById('root'));
 
