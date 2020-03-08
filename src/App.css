@@ -78,10 +78,13 @@ footer div i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 14.8% 0;
+  padding: 14.8% 5%;
   width: 90%;
-  height: auto;
-  margin: 0px 5%;
+  height: 50%;
+  margin: 4% 5%;
+  background-color: rgba(0,0,0,.75);
+  border-radius: 10px;
+  border: 2px white solid;
 }
 
 .fab{
