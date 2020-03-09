@@ -1,13 +1,51 @@
 import React from 'react';
 import michael from "./img/Michael.jpg";
 import {Link} from "react-router-dom";
+import styled from 'styled-components'
 
+const Overlay = styled.div`
+    @media only screen and (max-width: 890px){
+        background-color: rgba(0,0,0,.75);
+        width: 100vw;
+        height: 100vh;
+   
+    @media only screen and (max-width: 375){
+        width: 100vw;
+        height: 100%;
+    } 
+}
+`
+
+const AboutTab = styled.div`
+ 
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 5vh 5%;
+  
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    border: 2px white solid;
+  
+   p{
+    padding: 10px;
+  }
+
+    a{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: dodgerblue;
+    }
+ 
+`
 
 
 export default function About () {
 
     return(
-        <div id="aboutTab">
+        <Overlay>
+        <AboutTab>
             <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
 
             <div className="main">
@@ -24,6 +62,7 @@ export default function About () {
 
             </div>
 
-        </div>
+        </AboutTab>
+        </Overlay>
     ) 
 }
