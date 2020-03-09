@@ -4,17 +4,10 @@
   display: flex;
  justify-content: center;
   padding: 0px 0px;
-
 }
 
-#title{
-  border: 2px white solid;
-  border-radius: 10px;
- 
-  padding: 10Px;
- 
- 
-}
+
+
 
 h1{
   font-size: 3rem;
@@ -74,18 +67,7 @@ footer div i {
 
 }
 
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 14.8% 5%;
-  width: 90%;
-  height: 50%;
-  margin: 4% 5%;
-  background-color: rgba(0,0,0,.75);
-  border-radius: 10px;
-  border: 2px white solid;
-}
+
 
 .fab{
   color: white;
