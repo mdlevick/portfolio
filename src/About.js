@@ -8,12 +8,13 @@ const Overlay = styled.div`
         background-color: rgba(0,0,0,.75);
         width: 100vw;
         height: 100vh;
+    }
    
-    @media only screen and (max-width: 375){
-        width: 100vw;
+    @media only screen and (max-width: 490){
+        width: 100%;
         height: 100%;
     } 
-}
+
 `
 
 const AboutTab = styled.div`
@@ -22,14 +23,15 @@ const AboutTab = styled.div`
     flex-direction: column;
     width: 90%;
     height: auto;
-    margin: 5vh 5%;
+    margin: 5vh auto;
   
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     border: 2px white solid;
   
    p{
-    padding: 10px;
+    padding: 5px 30px;
+    text-align: left;
   }
 
     a{
@@ -37,6 +39,39 @@ const AboutTab = styled.div`
         font-weight: bold;
         color: dodgerblue;
     }
+    ul{
+        width: 100vw;
+        height: 100%;
+        padding 1% 0;
+        text-align: left;
+        padding: 5px 30px;
+    }
+    img{
+        width: 150px;
+        height: auto;
+      }
+      
+      .closeButton {
+        border: 2px white solid;
+        border-radius: 0 0 60px 0;
+        width: 60px;
+        background-color: white;
+        color: black;
+      }
+      .main{
+        height: auto;
+       }
+       
+       .main ul{
+         list-style-type: none;
+       }
+    @media only screen and (max-width: 890px){
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: none;
  
 `
 

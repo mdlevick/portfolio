@@ -11,125 +11,13 @@
 
 
 
-#aboutTab{ 
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: auto;
-  margin: 5vh 5%;
 
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  border: 2px white solid;
- }
 
-#aboutTab p{
-  padding: 10px;
-}
 
-#skillsTab {
-  display: flex;
-  flex-direction: column;
 
-   
-  width: 70%;
-  height: auto;
-  margin: 5vh auto;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  border: 2px white solid;
-  padding-bottom: 16%
-}
 
-#projectsTab{ 
-  
-  display: flex;
-  flex-direction: column;
-  width: 93%;
-  height: auto;
-  margin: 8.24% 4%;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  border: 2px white solid;
-  padding: 0  0 10px 0;
-}
-img{
-  width: 150px;
-  height: auto;
-}
 
-.closeButton {
-  border: 2px white solid;
-  border-radius: 0 0 60px 0;
-  width: 60px;
-  background-color: white;
-  color: black;
-}
-.main{
- height: auto;
-}
 
-.main ul{
-  list-style-type: none;
-}
-.mainSkills{
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
 
-}
-.TNI{
-  width: 100%;
-}
 
-.skill{
-  width: 100px;
-  border-radius: 10px;
-  border: white 2px solid;
-  margin: 10px;
-}
 
-.projects{
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.html, .react, .redux{
-  width: 30%;
-  border-radius: 10px;
-  border: white 2px solid;
-  margin: 10px;
-  text-align: left;
-}
-
-.html, .react, .redux{
-  text-align: center;
-  padding: 5px;
-  width: 250px;
-}
-.html i, .react i, .redux i{
-  font-size: 2rem;
-}
-
-#projectsTab img {
-  width: 150px;
-  height: auto;
-
-}
-#projectsTab .mainProjects {
-margin: 0 
-}
-#projectsTab a {
-  color: white;
-  }
-  #projectsTab a:visited {
-    color: white;
-    }
-.projects{
-  padding: 0px;
-}

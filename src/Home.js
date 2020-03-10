@@ -14,7 +14,7 @@ const Overlay = styled.div`
     } 
 }
 `
-const Home = styled.div`
+const HomeTab = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,19 +112,19 @@ const Home = styled.div`
 
   `
 
-export default function HomeTab () {
+export default function Home () {
 
 
     return(
         <Overlay>
-        <Home>
+        <HomeTab>
 
         
 
         <div id="title">
             <h1>Michael David Levick, Jr.</h1>
      
-            <h2>a place to show myself off and show what I can do with the knowledge I have learned.</h2>
+            <h2>A place to show myself off and show what I can do with the knowledge I have learned.</h2>
         </div>
 
         <nav>
@@ -154,7 +154,7 @@ export default function HomeTab () {
         </div>
     </footer>
 
-        </Home>
+        </HomeTab>
         </Overlay>
     )
 }
