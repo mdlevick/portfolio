@@ -7,23 +7,25 @@ const Overlay = styled.div`
         background-color: rgba(0,0,0,.75);
         width: 100vw;
         height: 100vh;
-    }
+   
     @media only screen and (max-width: 375){
         width: 100vw;
         height: 100%;
-    }
+    } 
+}
 `
-const Home = styled.div`
+const HomeTab = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 14.8% 5%;
-    width: 90%;
-    height: 50%;
+    padding: 10 % 5%;
+    width: 95%;
+    height: auto;
     margin: 4% auto;
     background-color: rgba(0,0,0,.75);
     border-radius: 10px;
     border: 2px white solid;
+    padding: 8%;
         
         #title{
             border: 2px white solid;
@@ -43,7 +45,7 @@ const Home = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 75px 0px;
+        padding: 5% 0px;
         
         
         }
@@ -73,7 +75,7 @@ const Home = styled.div`
         flex-direction: row;
         justify-content: space-around;
         width: 75%;
-        margin: auto;
+        margin: 1% auto;
         text-align: center;
         }
         
@@ -100,29 +102,29 @@ const Home = styled.div`
         background: none;
 
         #title{
-            margin: 20px;
+            margin: 10px 20px;
         }
 
         nav{
-            margin: auto;
+            margin: 10px  auto;
         }
      }
 
   `
 
-export default function HomeTab () {
+export default function Home () {
 
 
     return(
         <Overlay>
-        <Home>
+        <HomeTab>
 
         
 
         <div id="title">
             <h1>Michael David Levick, Jr.</h1>
      
-            <h2>a place to show myself off and show what I can do with the knowledge I have learned.</h2>
+            <h2>A place to show myself off and show what I can do with the knowledge I have learned.</h2>
         </div>
 
         <nav>
@@ -152,7 +154,7 @@ export default function HomeTab () {
         </div>
     </footer>
 
-        </Home>
+        </HomeTab>
         </Overlay>
     )
 }
