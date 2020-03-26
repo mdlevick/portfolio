@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import marketing from "./img/marketing.jpg";
-import todo from "./img/todo.jpg";
-import carSales from "./img/carSales.jpg";
+import todo from "./img/Todo.gif";
+import carSales from "./img/carSales.gif";
 import styled from 'styled-components'
 
 const Overlay = styled.div`
@@ -21,9 +21,9 @@ const Overlay = styled.div`
 const ProjectsTab = styled.div`
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 75%;
     height: auto;
-    margin: 4% 4%;
+    margin: 4% auto;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     border: 2px white solid;
@@ -35,21 +35,18 @@ const ProjectsTab = styled.div`
             width: 60px;
             background-color: white;
             color: black;
+            cursor: pointer;
+
         }
-        .html, .react, .redux{
-            text-align: center;
-            padding: 5px;
-            width: 250px;
-        }
+
         .html i, .react i, .redux i{
-            font-size: 2rem;
+            font-size: 3rem;
         }
         
     img {
-        width: 150px;
+        width: 50%;
         height: auto;
-        
-        
+        padding: 25px;
         }
 
         .mainProjects {
@@ -62,6 +59,9 @@ const ProjectsTab = styled.div`
         a:visited {
             color: white;
             }
+    ul{
+        text-align: left;
+    }
 
         
 .projects{
@@ -72,7 +72,7 @@ const ProjectsTab = styled.div`
     justify-content: space-around;
   }
   .html, .react, .redux{
-    width: 30%;
+    width: 85%;
     border-radius: 10px;
     border: white 2px solid;
     margin: 10px;
@@ -81,6 +81,7 @@ const ProjectsTab = styled.div`
   
   .html a, .react a, .redux a{
    margin: 0 auto;
+   font-size: 3rem;
 
 }
 
@@ -105,18 +106,18 @@ display: none;
 `
 
 
-export default function Projects () {
+export default function Projects (props) {
 
     return(
         <Overlay>
         <ProjectsTab>
-        <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
+        <button className="closeButton" onClick={() => props.history.push(`/`)}>
+						<h3>X</h3>
+					</button>
 
         <div className="mainProjects">
             <div className="TNI">
             <h3>Projects</h3>
-            
-            <p>these are some of the projects ive worked on while going to Lambda</p>
             </div>
 <div className="projects">
             <div className="html">
@@ -125,7 +126,7 @@ export default function Projects () {
                 <p className="projDesc">Did this project during a build week with six other developers doing different parts. This was my part in doing this project.</p>
                 <p className="stackUse">Built using HTML, CSS and LESS.</p>
                 <div>
-                    <a href="https://github.com/VirtualReality-Funding-Platform/Marketing-page" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square">  Project Repository</i></a>
+                    <a href="https://github.com/VirtualReality-Funding-Platform/Marketing-page" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
                     <li>Used time well</li>
@@ -135,12 +136,12 @@ export default function Projects () {
             </div>
 
             <div className="react">
-            <a href="https://car-sales-ll5zn3ng4.now.sh/" className="pics" target="_blank" rel="noopener noreferrer"><img src={todo} alt="Todo page" /></a>
+            <a href="https://reducer-todo-eight-wine.now.sh/"  className="pics" target="_blank" rel="noopener noreferrer"><img src={todo} alt="Todo page" /></a>
                 <h2 className="title"><a href="https://reducer-todo-eight-wine.now.sh/" target="_blank" rel="noopener noreferrer">Reducer Todo</a></h2>
                 <p className="projDesc">This project was done to learn the reducer function and component out the actions to a seperate case block.</p>
                 <p className="stackUse">Built with React, JSX, and a reducer function</p>
                 <div>
-                    <a href="https://github.com/mdlevick/reducer-todo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square">  Project Repository</i></a>
+                    <a href="https://github.com/mdlevick/reducer-todo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
                     <li>Built out the componets then wired in the Reducer</li>
@@ -155,7 +156,7 @@ export default function Projects () {
                 <p className="projDesc">This project was an assignment that came with some of the code but had to wire in the Redux</p>
                 <p className="stackUse">Built using Redux, React, and CSS</p>
                 <div>
-                    <a href="https://github.com/mdlevick/Car-Sales" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square">  Project Repository</i></a>
+                    <a href="https://github.com/mdlevick/Car-Sales" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
                     <li>overcame difficulties</li>

@@ -32,14 +32,15 @@ const HomeTab = styled.div`
             border-radius: 10px;
             background: none;
             padding: 10Px;
+            margin: 0 25px;
         }
 
         h1{
-            font-size: 3rem;
+            font-size: 4rem;
         }
         
         h2{
-        font-size: 1.2rem;
+        font-size: 2.6rem;
         }
         nav ul {
         display: flex;
@@ -89,7 +90,7 @@ const HomeTab = styled.div`
         
         }
         
-        .fab{
+        .fab, .fas{
         color: white;
         }
 
@@ -122,9 +123,9 @@ export default function Home () {
         
 
         <div id="title">
-            <h1>Michael David Levick, Jr.</h1>
-     
-            <h2>A place to show myself off and show what I can do with the knowledge I have learned.</h2>
+            <h1>Michael Levick</h1>
+            <h2>Web Developer</h2>
+
         </div>
 
         <nav>
@@ -151,6 +152,10 @@ export default function Home () {
         <hr></hr>
         <div>
         <a href="https://twitter.com/LevickMichael" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <hr></hr>
+        <div>
+        <a href="mailto:mdlevick@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i></a>
         </div>
     </footer>
 

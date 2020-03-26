@@ -25,7 +25,7 @@ const SkillsTab = styled.div`
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     border: 2px white solid;
-    padding-bottom: 9%;
+    padding-bottom: 5%;
 
     img{
         width: 150px;
@@ -38,6 +38,8 @@ const SkillsTab = styled.div`
         width: 60px;
         background-color: white;
         color: black;
+        cursor: pointer;
+
       }
 
       .mainSkills{
@@ -58,6 +60,10 @@ const SkillsTab = styled.div`
         border-radius: 10px;
         border: white 2px solid;
         margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     @media only screen and (max-width: 890px){
         border: none;
@@ -69,22 +75,24 @@ const SkillsTab = styled.div`
     }
 `
 
-export default function Skills () {
-const skills = ["HTML", "CSS/LESS", "Responsive Web Design", "React", "Redux", "Git Flow", "JavaScript", "Node.js", "Express", "Sessions", "JWT", "Stylizing Dependencies"  ]
+export default function Skills (props) {
+const skills = ["HTML", "CSS/LESS", "Responsive Web Design", "React", "Redux", "Git Flow", "JavaScript", "Context Hooks", "Node.js", "Express", "Sessions", "JWT", "AWS", "React Testing Library", "JEST", "Stylizing Dependencies"  ]
     return(
         <Overlay>
         <SkillsTab>
-        <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
+        <button className="closeButton" onClick={() => props.history.push(`/`)}>
+						<h3>X</h3>
+					</button>
 
         <div className="mainSkills">
             <div className="TNI">
-            <h3>Skills</h3>
+           
             <img src={code} alt="code." />
             <p>I learned these skills from self study and through Lambda Schools Web Development path</p>
             </div>
 
         {skills.map(skill => 
-            <div className="skill">{skill}</div>
+            <div className="skill"><div>{skill}</div></div>
             )}
 
 
