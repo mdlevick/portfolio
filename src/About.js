@@ -1,27 +1,26 @@
 import React from 'react';
-import michael from "./img/Michael.jpg";
-import {Link} from "react-router-dom";
-import styled from 'styled-components'
+import michael from './img/Michael.jpg';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Overlay = styled.div`
-    @media only screen and (max-width: 890px){
-        background-color: rgba(0,0,0,.75);
-        width: 100vw;
-        height: 100vh;
-    }
-   
-    @media only screen and (max-width: 490){
-        width: 100%;
-        height: 100%;
-    } 
+	@media only screen and (max-width: 890px) {
+		background-color: rgba(0, 0, 0, 0.75);
+		width: 100vw;
+		height: 100vh;
+	}
 
-`
+	@media only screen and (max-width: 490) {
+		width: 100%;
+		height: 100%;
+	}
+`;
 
 const AboutTab = styled.div`
  
     display: flex;
-    flex-direction: column;
-    width: 90%;
+    flex-direction: row;
+    width: 65%;
     height: auto;
     margin: 5vh auto;
   
@@ -34,7 +33,7 @@ const AboutTab = styled.div`
     text-align: left;
   }
 
-    a{
+    .main a{
         font-size: 1.6rem;
         font-weight: bold;
         color: dodgerblue;
@@ -47,8 +46,9 @@ const AboutTab = styled.div`
         padding: 5px 30px;
     }
     img{
-        width: 150px;
+        width: 460px;
         height: auto;
+        padding: 20px;
       }
       
       .closeButton {
@@ -57,9 +57,12 @@ const AboutTab = styled.div`
         width: 60px;
         background-color: white;
         color: black;
+        cursor: pointer;
       }
       .main{
         height: auto;
+        width: 61%;
+        margin: auto;
        }
        
        .main ul{
@@ -72,32 +75,33 @@ const AboutTab = styled.div`
         padding: 0px;
         margin: 0px;
         background: none;
- 
+    }
 `
+    
 
+export default function About(props) {
+	return (
+		<Overlay>
+			<AboutTab>
+				<div>
+					<button className="closeButton" onClick={() => props.history.push(`/`)}>
+						<h3>X</h3>
+					</button>
+				</div>
+				<div>
+					<img src={michael} alt="Michael David Levick, Jr." />
+				</div>
+				<div className="main">
+					<p>
+            I am looking for a job that I can flex what i know and learn more about Web Development and making web apps in general. I have been working with and on computers for over 20	years. until recently it has been, in a more Technical Support aspect. I enjoy making chain mail and going to the renaissance faire. My first computer was an IBM P/S 1 with Windows 3.0 and DOS. I enjoy learning and and look forward to learning new things about the world and technology everyday. I look forward to working on code and creating functional and elegant apps that people will love. 
+					</p>
 
-export default function About () {
-
-    return(
-        <Overlay>
-        <AboutTab>
-            <Link to={`/`}><div className="closeButton" ><h3>X</h3></div></Link>
-
-            <div className="main">
-                <h3>About</h3>
-                <img src={michael} alt="Michael David Levick, Jr." />
-                <p>My name is Michael Levick and I have been working with and on computers for over 20 years. until recently it has been, in a more Technical Support aspect. My first computer was an IBM P/S 1 with Windows 3.0 and DOS. I enjoy learning and continue to do so daily and plan to do so for the rest of my days. I am a student at Lambda School and plan to graduate in July of 2020. I enjoy Video Games and would like to learn to develop them in the future.</p>
-
-                <ul>
-                <li>(817) 404-9452</li>
-                <li>117 Salas Dr.</li>
-                <li>San Marcos, TX 78666</li>
-                <li><a href="mailto:mdlevick@gmail.com">mdlevick@gmail.com</a></li>
-                </ul>
-
-            </div>
-
-        </AboutTab>
-        </Overlay>
-    ) 
+					<ul>
+						<li>(817) 404-9452</li>
+						<li>San Antonio, TX</li>
+					</ul>
+				</div>
+			</AboutTab>
+		</Overlay>
+	);
 }

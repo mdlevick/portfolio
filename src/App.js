@@ -7,18 +7,19 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
-function App() {
+function App(props) {
+  console.log(props)
   return (
     <div className="App">
       <header className="App-header">
 
        
 
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/skills" component={Skills} />
-      <Route path="/projects" component={Projects} />
-      {/* <Route path="/contact" component={Contact} /> */}
+      <Route exact path="/" history={props.history} component={Home} />
+      <Route path="/about" history={props.history} component={About} />
+      <Route path="/skills" history={props.history} component={Skills} />
+      <Route path="/projects" history={props.history} component={Projects} />
+      {/* <Route path="/contact" history={props.history} component={Contact} /> */}
 
       </header>
       
