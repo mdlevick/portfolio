@@ -81,7 +81,7 @@ const skills = ["HTML", "CSS/LESS", "Responsive Web Design", "React", "Redux", "
     return(
         <Overlay>
         <SkillsTab>
-        <button className="closeButton" onClick={() => props.history.goBack()}>>
+        <button className="closeButton" onClick={() => props.history.goBack()}>
 						<h3>X</h3>
 					</button>
 
