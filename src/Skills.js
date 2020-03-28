@@ -7,13 +7,14 @@ const Overlay = styled.div`
     @media only screen and (max-width: 890px){
         background-color: rgba(0,0,0,.75);
         width: 100vw;
-        height: 100vh;
-   
+        height: 100%;
+ }  
     @media only screen and (max-width: 375){
         width: 100vw;
         height: 100%;
     } 
-}
+
+
 `
 
 const SkillsTab = styled.div`
@@ -80,7 +81,7 @@ const skills = ["HTML", "CSS/LESS", "Responsive Web Design", "React", "Redux", "
     return(
         <Overlay>
         <SkillsTab>
-        <button className="closeButton" onClick={() => props.history.push(`/`)}>
+        <button className="closeButton" onClick={() => props.history.goBack()}>>
 						<h3>X</h3>
 					</button>
 

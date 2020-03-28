@@ -7,18 +7,18 @@ const Overlay = styled.div`
         background-color: rgba(0,0,0,.75);
         width: 100vw;
         height: 100vh;
-   
-    @media only screen and (max-width: 375){
+    }  
+    @media only screen and (max-width: 375px){
         width: 100vw;
         height: 100%;
     } 
-}
+
 `
 const HomeTab = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10 % 5%;
+    padding: 10% 5%;
     width: 95%;
     height: auto;
     margin: 4% auto;
@@ -42,7 +42,7 @@ const HomeTab = styled.div`
         h2{
         font-size: 2.6rem;
         }
-        nav ul {
+        nav .links {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -50,16 +50,21 @@ const HomeTab = styled.div`
         
         
         }
-        nav ul li {
+        nav .links button {
         list-style-type: none;
-        width: 75px;
+        width: 20%;
+        background: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: bold;
         border: 2px white solid;
         border-radius: 10px;
+        font-size: 1.2rem;
         
         padding: 10Px;
         
         }
-        nav ul li a{
+        nav .links div a{
         text-decoration: none;
         color: white;
         font-size: 1.2rem;
@@ -67,7 +72,7 @@ const HomeTab = styled.div`
         
         }
         
-        nav ul li a:visited{
+        nav .links div a:visited{
         color: white;
         }
         
@@ -108,12 +113,21 @@ const HomeTab = styled.div`
 
         nav{
             margin: 10px  auto;
+            width: 100%;
+            .links {
+                display: flex;
+                flex-direction: column;
+                button{
+                    width: 90%;
+                    margin: 0px  auto;
+                }
+            }
         }
      }
 
   `
 
-export default function Home () {
+export default function Home (props) {
 
 
     return(
@@ -129,15 +143,15 @@ export default function Home () {
         </div>
 
         <nav>
-            <ul>
-                <li><Link to={`/about`}>About</Link></li>
+            <div className="links">
+                <button onClick={() => props.history.push(`/about`)}>About</button>
                 <hr></hr>
-                <li><Link to={`/skills`}>Skills</Link></li>
+                <button onClick={() => props.history.push(`/skills`)}>Skills</button>
                 <hr></hr>
-                <li><Link to={`/projects`}>Projects</Link></li>
+                <button onClick={() => props.history.push(`/projects`)}>Projects</button>
                 {/* <hr></hr>
-                <li><Link to={`/contact`}>Contact</Link></li>					 */}
-            </ul>
+                <button>onClick={() => props.history.push(`/contact`)}>Contact</button>					 */}
+            </div>
 		</nav>
 
     <footer className="icons">

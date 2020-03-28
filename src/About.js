@@ -29,26 +29,25 @@ const AboutTab = styled.div`
     border: 2px white solid;
   
    p{
-    padding: 5px 30px;
+    padding: 5px 0px;
     text-align: left;
   }
 
     .main a{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: bold;
-        color: dodgerblue;
+        color: white;
     }
     ul{
-        width: 100vw;
-        height: 100%;
-        padding 1% 0;
+        padding: 1% 0;
         text-align: left;
-        padding: 5px 30px;
+        padding: 5px auto;
     }
     img{
-        width: 460px;
+        width: 40%;
         height: auto;
         padding: 20px;
+        margin: 0 auto;
       }
       
       .closeButton {
@@ -61,20 +60,45 @@ const AboutTab = styled.div`
       }
       .main{
         height: auto;
-        width: 61%;
+        width: 60%;
         margin: auto;
+        padding: 10px;
        }
        
        .main ul{
          list-style-type: none;
        }
+       .fas{
+        color: white;
+        }
+
     @media only screen and (max-width: 890px){
+      display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: auto;
         border: none;
         width: 100%;
         height: 100%;
         padding: 0px;
         margin: 0px;
         background: none;
+        .buttonCont{
+          width: 100%;
+          display: flex;
+    flex-direction: column;
+    align-items: left;
+
+        }
+            img{
+      width: 85%;
+    }
+    .main{
+      width: 90%;
+      p{
+        padding: 1% 1%;
+      }
+    }
     }
 `
     
@@ -83,14 +107,14 @@ export default function About(props) {
 	return (
 		<Overlay>
 			<AboutTab>
-				<div>
-					<button className="closeButton" onClick={() => props.history.push(`/`)}>
+				<div className="buttonCont">
+					<button className="closeButton" onClick={() => props.history.goBack()}>
 						<h3>X</h3>
 					</button>
 				</div>
-				<div>
+				
 					<img src={michael} alt="Michael David Levick, Jr." />
-				</div>
+				
 				<div className="main">
 					<p>
             I am looking for a job that I can flex what i know and learn more about Web Development and making web apps in general. I have been working with and on computers for over 20	years. until recently it has been, in a more Technical Support aspect. I enjoy making chain mail and going to the renaissance faire. My first computer was an IBM P/S 1 with Windows 3.0 and DOS. I enjoy learning and and look forward to learning new things about the world and technology everyday. I look forward to working on code and creating functional and elegant apps that people will love. 
@@ -99,6 +123,7 @@ export default function About(props) {
 					<ul>
 						<li>(817) 404-9452</li>
 						<li>San Antonio, TX</li>
+            <li><a href="mailto:mdlevick@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i> Email</a></li>
 					</ul>
 				</div>
 			</AboutTab>
