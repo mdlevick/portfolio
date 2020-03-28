@@ -15,10 +15,10 @@ function App(props) {
 
        
 
-      <Route exact path="/" history={props.history} component={Home} />
-      <Route path="/about" history={props.history} component={About} />
-      <Route path="/skills" history={props.history} component={Skills} />
-      <Route path="/projects" history={props.history} component={Projects} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" history={props.history} component={About} />
+      <Route exact path="/skills" history={props.history} component={Skills} />
+      <Route exact path="/projects" history={props.history} component={Projects} />
       {/* <Route path="/contact" history={props.history} component={Contact} /> */}
 
       </header>

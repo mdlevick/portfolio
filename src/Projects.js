@@ -28,7 +28,9 @@ const ProjectsTab = styled.div`
     border-radius: 10px;
     border: 2px white solid;
     padding: 0  0 10px 0;
-     
+     h3{
+         font-size: 2rem;
+     }
         .closeButton {
             border: 2px white solid;
             border-radius: 0 0 60px 0;
@@ -79,7 +81,7 @@ const ProjectsTab = styled.div`
     text-align: center;
   }
   
-  .html a, .react a, .redux a{
+  .html a h2, .react a h2, .redux a h2{
    margin: 0 auto;
    font-size: 3rem;
 
@@ -92,13 +94,30 @@ const ProjectsTab = styled.div`
         padding: 0px;
         margin: 0px;
         background: none;
-        @media only screen and (max-width: 530px){
-        .pics{
-display: none;
+
+        p{
+            padding: 0 5%;
         }
+        @media only screen and (max-width: 530px){
+        img{
+                    width: 90%;
+                    padding: 3%;
+                    }
         .html, .react, .redux{
             width: 90%;
+          
 
+            .aPics {
+                
+                font-size: 0rem;
+
+                    
+                    }
+            }
+            a h2{
+                margin: 0 auto;
+                font-size: 3rem;  
+            }
           }
     }
     }
@@ -111,7 +130,7 @@ export default function Projects (props) {
     return(
         <Overlay>
         <ProjectsTab>
-        <button className="closeButton" onClick={() => props.history.push(`/`)}>
+        <button className="closeButton" onClick={() => props.history.goBack()}>
 						<h3>X</h3>
 					</button>
 
@@ -121,7 +140,7 @@ export default function Projects (props) {
             </div>
 <div className="projects">
             <div className="html">
-            <a href="https://nostalgic-sinoussi-ec1542.netlify.com" className="pics" target="_blank" rel="noopener noreferrer"><img src={marketing} alt="Marketing page" /></a>
+            <a href="https://nostalgic-sinoussi-ec1542.netlify.com" className="pics aPics" target="_blank" rel="noopener noreferrer"><img src={marketing} alt="Marketing page" /></a>
                 <h2 className="title"><a href="https://nostalgic-sinoussi-ec1542.netlify.com" target="_blank" rel="noopener noreferrer">VR Connect Marketing Page</a></h2>
                 <p className="projDesc">Did this project during a build week with six other developers doing different parts. This was my part in doing this project.</p>
                 <p className="stackUse">Built using HTML, CSS and LESS.</p>
@@ -136,7 +155,7 @@ export default function Projects (props) {
             </div>
 
             <div className="react">
-            <a href="https://reducer-todo-eight-wine.now.sh/"  className="pics" target="_blank" rel="noopener noreferrer"><img src={todo} alt="Todo page" /></a>
+            <a href="https://reducer-todo-eight-wine.now.sh/"  className="pics aPics" target="_blank" rel="noopener noreferrer"><img src={todo} alt="Todo page" /></a>
                 <h2 className="title"><a href="https://reducer-todo-eight-wine.now.sh/" target="_blank" rel="noopener noreferrer">Reducer Todo</a></h2>
                 <p className="projDesc">This project was done to learn the reducer function and component out the actions to a seperate case block.</p>
                 <p className="stackUse">Built with React, JSX, and a reducer function</p>
@@ -151,7 +170,7 @@ export default function Projects (props) {
             </div>
 
             <div className="redux">
-            <a href="https://car-sales-ll5zn3ng4.now.sh/" className="pics" target="_blank" rel="noopener noreferrer"><img src={carSales} alt="Car Sales page" /></a>
+            <a href="https://car-sales-ll5zn3ng4.now.sh/" className="pics aPics" target="_blank" rel="noopener noreferrer"><img src={carSales} alt="Car Sales page" /></a>
                 <h2 className="title"><a href="https://car-sales-ll5zn3ng4.now.sh/" target="_blank" rel="noopener noreferrer">Car Sales</a></h2>
                 <p className="projDesc">This project was an assignment that came with some of the code but had to wire in the Redux</p>
                 <p className="stackUse">Built using Redux, React, and CSS</p>
