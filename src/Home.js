@@ -56,11 +56,11 @@ const HomeTab = styled.div`
         background: none;
         color: #FFFFFF;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: bolder;
         border: 2px white solid;
         border-radius: 10px;
         font-size: 1.2rem;
-        
+        font-family: "apple-system", "BlinkMacSystemFont", 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         padding: 10Px;
         
         }
@@ -71,11 +71,27 @@ const HomeTab = styled.div`
         font-weight: bold;
         
         }
+      .resume{
+        text-decoration: none;
+        list-style-type: none;
+    width: 20%;
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px white solid;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10Px;
+        }
         
         nav .links div a:visited{
         color: white;
         }
-        
+        nav .links button:hover, .resume:hover{
+            background: white;
+    color: #000000;
+        }
         footer {
         display: flex;
         flex-direction: row;
@@ -114,12 +130,23 @@ const HomeTab = styled.div`
         nav{
             margin: 10px  auto;
             width: 100%;
-            .links {
+            .links{
                 display: flex;
                 flex-direction: column;
+                a{
+                    width: 90%;
+                    button  {
+                        width: 100%;
+                        margin: 0px  auto;
+                   }
+                }
                 button{
                     width: 90%;
                     margin: 0px  auto;
+                }
+                .resume{
+                    margin: 0 auto;
+                    width: 87.25%;
                 }
             }
         }
@@ -149,6 +176,8 @@ export default function Home (props) {
                 <button onClick={() => props.history.push(`/skills`)}>Skills</button>
                 <hr></hr>
                 <button onClick={() => props.history.push(`/projects`)}>Projects</button>
+                <hr></hr>
+                <a href="https://docs.google.com/document/d/14OT6pRw2-q3TucvNumqIFwcSfNHSGLrxmswSrKngOYw/edit?usp=sharing" class="resume" target="_blank" rel="noopener noreferrer">Resume</a>
                 {/* <hr></hr>
                 <button>onClick={() => props.history.push(`/contact`)}>Contact</button>					 */}
             </div>
