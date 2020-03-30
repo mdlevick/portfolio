@@ -186,7 +186,7 @@ export default function Home (props) {
     <footer className="icons">
     
         <div>
-        <a href="https://www.linkedin.com/in/michael-david-levick-jr-81b4a0115/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="www.linkedin.com/in/Michael-Levick" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         </div>
         <hr></hr>
         <div>

@@ -57,6 +57,7 @@ const AboutTab = styled.div`
         background-color: white;
         color: black;
         cursor: pointer;
+      
       }
       .main{
         height: auto;
@@ -117,7 +118,7 @@ export default function About(props) {
 				
 				<div className="main">
 					<p>
-            I am looking for a job that I can flex what i know and learn more about Web Development and making web apps in general. I have been working with and on computers for over 20	years. until recently it has been, in a more Technical Support aspect. I enjoy making chain mail and going to the renaissance faire. My first computer was an IBM P/S 1 with Windows 3.0 and DOS. I enjoy learning and and look forward to learning new things about the world and technology everyday. I look forward to working on code and creating functional and elegant apps that people will love. 
+            I am looking for a job that I can flex what I know and learn more about Web Development and making web apps in general. I have been working with and on computers for over 20	years, until recently it has been, in a more Technical Support aspect. I enjoy making chain mail and going to the renaissance faire. My first computer was an IBM P/S 1 with Windows 3.0 and DOS. I enjoy learning and and look forward to learning new things about the world and technology everyday. I look forward to working on code and creating functional and elegant apps that people will love. 
 					</p>
 
 					<ul>

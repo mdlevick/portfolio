@@ -28,7 +28,7 @@ const ProjectsTab = styled.div`
     border-radius: 10px;
     border: 2px white solid;
     padding: 0  0 10px 0;
-     h3{
+     h1{
          font-size: 2rem;
      }
         .closeButton {
@@ -38,7 +38,7 @@ const ProjectsTab = styled.div`
             background-color: white;
             color: black;
             cursor: pointer;
-
+            
         }
 
         .html i, .react i, .redux i{
@@ -136,14 +136,14 @@ export default function Projects (props) {
 
         <div className="mainProjects">
             <div className="TNI">
-            <h3>Projects</h3>
+            <h1>Projects</h1>
             </div>
 <div className="projects">
             <div className="html">
             <a href="https://nostalgic-sinoussi-ec1542.netlify.com" className="pics aPics" target="_blank" rel="noopener noreferrer"><img src={marketing} alt="Marketing page" /></a>
                 <h2 className="title"><a href="https://nostalgic-sinoussi-ec1542.netlify.com" target="_blank" rel="noopener noreferrer">VR Connect Marketing Page</a></h2>
-                <p className="projDesc">Did this project during a build week with six other developers doing different parts. This was my part in doing this project.</p>
-                <p className="stackUse">Built using HTML, CSS and LESS.</p>
+                <p className="projDesc">Did this project during a build week with six other developers doing different parts. This was my part in doing this project</p>
+                <p className="stackUse">Built using HTML, CSS and LESS</p>
                 <div>
                     <a href="https://github.com/VirtualReality-Funding-Platform/Marketing-page" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
@@ -157,14 +157,14 @@ export default function Projects (props) {
             <div className="react">
             <a href="https://reducer-todo-eight-wine.now.sh/"  className="pics aPics" target="_blank" rel="noopener noreferrer"><img src={todo} alt="Todo page" /></a>
                 <h2 className="title"><a href="https://reducer-todo-eight-wine.now.sh/" target="_blank" rel="noopener noreferrer">Reducer Todo</a></h2>
-                <p className="projDesc">This project was done to learn the reducer function and component out the actions to a seperate case block.</p>
+                <p className="projDesc">This project was done to learn the reducer function and component out the actions to a seperate case block</p>
                 <p className="stackUse">Built with React, JSX, and a reducer function</p>
                 <div>
                     <a href="https://github.com/mdlevick/reducer-todo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
                     <li>Built out the componets then wired in the Reducer</li>
-                    <li>got done with assignment before it was due</li>
+                    <li>finished with assignment before it was due</li>
                     <li>this was a solo project</li>
                 </ul>
             </div>
@@ -178,7 +178,7 @@ export default function Projects (props) {
                     <a href="https://github.com/mdlevick/Car-Sales" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
                 </div>
                 <ul>
-                    <li>overcame difficulties</li>
+                    <li>overcame difficulties understanding how Redux worked</li>
                     <li>refactored react app for Redux</li>
                     <li>had to add and subtract car parts from both sides</li>
                 </ul>
